@@ -28,8 +28,8 @@ metadata:
 - 用户要**了解某个命令的 flags** → `adex <command> --help` 或见 [共享 Flags](#共享-flags)
 - 用户要**调试请求** → 加 `--dry-run` 打印请求路径和参数，见 [Dry-Run](#dry-run)
 - 用户遇到**报错** → 见 [错误处理](#错误处理)，根据 `type` / `subtype` 判断原因
-- 用户要**查快手广告数据** → 路由到 [`adex-ks`](../adex-ks/SKILL.md)
-- 用户要**查巨量引擎广告数据** → 路由到 [`adex-oe`](../adex-oe/SKILL.md)
+- 用户要**查快手广告数据** → 路由到 `adex-ks`
+- 用户要**查巨量引擎广告数据** → 路由到 `adex-oe`
 
 ## 安装
 
@@ -441,12 +441,12 @@ adex ks accounts --page-size 3 --jq '.items[0]'
 
 | 用户意图 | 路由到 Skill |
 |----------|-------------|
-| 快手广告数据查询 | [`adex-ks`](../adex-ks/SKILL.md) |
-| 巨量引擎广告数据查询 | [`adex-oe`](../adex-oe/SKILL.md) |
+| 快手广告数据查询 | `adex-ks` |
+| 巨量引擎广告数据查询 | `adex-oe` |
 | 安装、配置、认证、共享 flags、租户管理、用户信息 | 本 Skill |
 
 ## 不在本 skill 范围
 
-- 快手广告数据查询（账户、计划、组、创意、报表、排名） → [`../adex-ks/SKILL.md`](../adex-ks/SKILL.md)
-- 巨量引擎广告数据查询（账户、项目、单元、报表、排名、预算对比） → [`../adex-oe/SKILL.md`](../adex-oe/SKILL.md)
+- 快手广告数据查询（账户、计划、组、创意、报表、排名） → `../adex-ks/SKILL.md`
+- 巨量引擎广告数据查询（账户、项目、单元、报表、排名、预算对比） → `../adex-oe/SKILL.md`
 - 创建 / 修改 / 删除广告投放对象 → 本 CLI 仅提供查询功能，不支持写入操作

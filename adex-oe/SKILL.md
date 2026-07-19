@@ -10,11 +10,11 @@ metadata:
 
 # oe — 巨量引擎广告数据
 
-**CRITICAL — 开始前 MUST 先用 Read 工具读取 [`../adex-shared/SKILL.md`](../adex-shared/SKILL.md)，其中包含安装、认证、共享 flags（分页、日期范围、jq、输出格式、错误处理）。**
+**CRITICAL — 开始前 MUST 先用 Read 工具读取 `../adex-shared/SKILL.md`，其中包含安装、认证、共享 flags（分页、日期范围、jq、输出格式、错误处理）。**
 
 > **所有命令支持 `--tenant`（可选）。** 通过 `adex init --tenant <ID>` 或 `adex tenant use <ID>` 设定默认租户后，后续命令无需再传 `--tenant`。`report-metric-meta` 不需要租户。
 
-**CRITICAL — 未设定默认租户时，禁止 AI 自动选择租户。** 必须先回到 [`adex-shared`](../adex-shared/SKILL.md) 执行 `adex tenant --page-all --format table`，**展示租户列表让用户选择**，再 `adex tenant use <用户选择的ID>`。
+**CRITICAL — 未设定默认租户时，禁止 AI 自动选择租户。** 必须先回到 `adex-shared` 执行 `adex tenant --page-all --format table`，**展示租户列表让用户选择**，再 `adex tenant use <用户选择的ID>`。
 
 ## 快速决策
 
@@ -128,7 +128,7 @@ adex oe account-budget-vs-actual --advertiser <ADVERTISER_ID> --range 30d
 
 ## 共享 Flags
 
-以下 flags 在所有命令中通用（详见 [`../adex-shared/SKILL.md`](../adex-shared/SKILL.md)）：
+以下 flags 在所有命令中通用（详见 `../adex-shared/SKILL.md`）：
 
 | Flag | 说明 | 默认值 |
 |------|------|--------|
@@ -163,7 +163,7 @@ adex oe account-budget-vs-actual --advertiser <ADVERTISER_ID> --range 30d
 
 ## 不在本 skill 范围
 
-- 快手广告数据查询 → [`../adex-ks/SKILL.md`](../adex-ks/SKILL.md)
-- 安装、配置、认证、共享 flags 参考 → [`../adex-shared/SKILL.md`](../adex-shared/SKILL.md)
-- 租户管理、用户信息查询 → [`../adex-shared/SKILL.md`](../adex-shared/SKILL.md)
+- 快手广告数据查询 → `../adex-ks/SKILL.md`
+- 安装、配置、认证、共享 flags 参考 → `../adex-shared/SKILL.md`
+- 租户管理、用户信息查询 → `../adex-shared/SKILL.md`
 - 创建 / 修改 / 删除广告投放对象 → 本 CLI 仅提供查询功能，不支持写入操作

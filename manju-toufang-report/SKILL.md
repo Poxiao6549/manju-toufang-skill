@@ -12,10 +12,10 @@ metadata:
 
 **用途**：管理层经微信提问投放情况 → 拉 adex 数据 → AI 归一化剧名聚合 → 中文文字汇报 或 生成 docx 报告发群。
 
-**上游数据 skill（拉数命令细节看它们）**：
-- 快手：[`adex-ks`](../adex-ks/SKILL.md)
-- 巨量：[`adex-oe`](../adex-oe/SKILL.md)
-- 安装/认证/共享flags：[`adex-shared`](../adex-shared/SKILL.md)
+**上游数据 skill（拉数命令细节看它们，需一并安装）**：
+- 快手：`adex-ks`（快手广告数据查询）
+- 巨量：`adex-oe`（巨量广告数据查询）
+- 安装/认证/共享flags：`adex-shared`
 
 **本 skill 的参考（按需 Read）**：
 - [`references/adex-cmd-cheatsheet.md`](references/adex-cmd-cheatsheet.md) — ks/oe 命令速查、时间参数映射、dashboard 字段对照表
